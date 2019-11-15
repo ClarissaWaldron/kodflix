@@ -11,7 +11,7 @@ export default function App() {
     <div className="App">
       <br />
       <Route exact path ='/' component={Gallery} />
-      <Route exact path ='/Tvshowinfo' component={Tvshowinfo} />
+      <Route path ='/:Tvshowinfo' component={Tvshowinfo} />
     </div>
     </Router>
   );
