@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Gallery from './Gallery'
 import './App.css';
-import Tvshowinfo from './Tvshowinfo';
+import tvShowInfo from './tvShowInfoId';
 
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
     <div className="App">
       <br />
       <Route exact path ='/' component={Gallery} />
-      <Route path ='/:TvshowinfoId' component={Tvshowinfo} />
+      <Route path ='/:tvShowInfoId' component={tvShowInfo} />
     </div>
     </Router>
   );

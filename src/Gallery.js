@@ -1,6 +1,6 @@
 import React from 'react';
-import getImproveTvShowInfo from './Improvetvshowinfo';
-import Tvshow from './Tvshow'; 
+import getImproveTvShowInfo from './improveTvShowInfo';
+import Tvshow from './tvShow'; 
 
 
 
