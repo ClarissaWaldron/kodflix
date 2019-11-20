@@ -1,27 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import getImproveTvShowInfo from './Improvetvshowinfo';
+
 
 export default class Tvshowinfo extends React.Component {
 
     constructor () {
         super();
         this.state = {
-            welcomeMessage: 'Here are some details about the show.'
+            shows: {}
         };
     }
 
     componentDidMount() {
-        setTimeout(() => {
+        let TvshowinfoId = this.props.match.params.TvshowinfoId;
+        let shows = getImproveTvShowInfo().find((shows) => {
+            return shows.id === TvshowinfoId;
+        });
             this.setState ({
-                welcomeMessage: 'Coming soon'
+                shows: shows 
             });
-        }, 3000);
+        
     }
 
     render () {
         return (
             <div>
-            <h1> {this.state.welcomeMessage}</h1>
+            <h1> {this.state.shows.name}</h1>
             <Link to='/'>Back to homepage</Link>
         </div>
     );
