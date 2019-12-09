@@ -1,17 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Gallery from './Gallery'
 import './App.css';
-import tvShowInfo from './tvShowInfoId';
+import tvShowInfo from './tvShowInfoId/tvShowInfoId';
+import notFound from './notFound';
 
 
 export default function App() {
   return (
     <Router>
     <div className="App">
-      <br />
+      <Switch>
       <Route exact path ='/' component={Gallery} />
+      <Route path = '/not-found' component={notFound} />
       <Route path ='/:tvShowInfoId' component={tvShowInfo} />
+      </Switch>
     </div>
     </Router>
   );
