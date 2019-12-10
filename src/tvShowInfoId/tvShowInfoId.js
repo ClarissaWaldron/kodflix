@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom'
-import getImproveTvShowInfo from '../improveTvShowInfo';
+import getImproveTvShowInfo from '../sInfo';
 import './tvShowInfoId.css';
 
 

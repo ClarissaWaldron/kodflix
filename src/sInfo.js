@@ -14,8 +14,4 @@ export default function getImproveTvShowInfo() {
               {id: 'strangerthings', name: "Stranger Things", image: st, details: 'In a small Indiana town in the early 1980s, a boy goes missing after finding something sinister lurking in the woods. Nearby, a girl with extraordinary powers escapes from a sinister government facility and joins together with the boy\'s friends to get him back.' },
               {id: 'mrrobot', name: "Mr Robot", image: robot, details: 'Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.'},
       ];
-
-      
-
-
 }
