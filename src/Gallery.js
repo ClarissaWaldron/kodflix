@@ -1,6 +1,6 @@
 import React from 'react';
 import getImproveTvShowInfo from './sInfo';
-import Tvshow from './tvShow'; 
+import Tvshow from './tvProg'; 
 
 export default function Gallery () {
     return ( 
