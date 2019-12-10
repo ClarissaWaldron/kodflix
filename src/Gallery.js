@@ -3,7 +3,6 @@ import getImproveTvShowInfo from './improveTvShowInfo';
 import Tvshow from './tvShow'; 
 
 
-
 export default function Gallery () {
     return ( 
         <div>
