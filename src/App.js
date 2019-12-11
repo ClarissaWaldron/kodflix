@@ -4,6 +4,7 @@ import Gallery from './Gallery'
 import './App.css';
 import tvShowInfo from './tvShowInfoId/tvShowInfoId';
 import notFound from './notFound';
+import 'animate.css'
 
 
 export default function App() {

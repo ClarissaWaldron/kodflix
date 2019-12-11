@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node" : "12.13.0"
+    "node": "12.13.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",

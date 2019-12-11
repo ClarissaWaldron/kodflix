@@ -29,7 +29,12 @@ export default class tvShowInfoId extends React.Component {
         } else {
             return (
                 <div className='tvShowInfoId' >
-                    <h1>{this.state.show.name}</h1>
+                    <h1 className='showName'>{this.state.show.name}</h1>
+                    <div className='homepage'>
+                    <div class="animated bounceInLeft">
+                    <Link to='/'>Back to homepage</Link>
+                    </div>
+                    </div>
                     <div className='content'>
                         <div className='text'>
                             {this.state.show.details}
@@ -39,8 +44,8 @@ export default class tvShowInfoId extends React.Component {
                             src={this.state.show.image}
                             alt={this.state.show.name} />
                     </div>
-                    <Link to='/'>Back to homepage</Link>
-                </div>
+                    
+                    </div> 
             );
         }
     }
